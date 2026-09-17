@@ -1,0 +1,7 @@
+interface:
+  display_name: "产品项目三工作台初始化"
+  short_description: "按指定目录搭建产品项目骨架并创建三个分工明确的工作台任务"
+  default_prompt: "使用 $product-project-bootstrap，为这个产品在我提供的文件夹中初始化项目，并创建总工作台、Home页工作台和Product page工作台。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,39 @@
+# Codex Workflows & Skills
+
+个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2，后续按主题扩展。
+
+## 开始使用
+
+- [下载 v1.2 Windows 整合包](downloads/Codex-product-site-suite-v1.2.zip)
+- [安装与使用说明](README-先读这里.md)
+- [完整工作流手册](skills/product-site-suite/references/manual-v1.2.md)
+- [本地验证结果与限制](验证结果.md)
+
+解压后在 Codex 打开文件夹，让 Codex 阅读安装说明并执行 `Install.ps1`。需要 PowerShell 7；同名 Skill 默认保留，显式替换会先备份。
+
+## Skill 目录
+
+| Skill | 用途 |
+|---|---|
+| [product-site-suite](skills/product-site-suite/SKILL.md) | 产品网站总入口，路由开工、建设和审查 |
+| [product-project-bootstrap](skills/product-project-bootstrap/SKILL.md) | 用户指定目录、项目模板和三个工作台 |
+| [shopify-product-site-factory](skills/shopify-product-site-factory/SKILL.md) | 单品／少量产品 Shopify 建设与审查便携版 |
+
+使用示例：
+
+> 使用 $product-site-suite。产品名称：……；项目文件夹：……；产品／参考网址：……。先整理资料与外观参考，再提供完整 Home 手机／PC 方案，逐步补全网站。
+
+三个 Skill 需一起安装，包内使用相对依赖。浏览器、Shopify、Git、图片生成与任务管理工具由使用环境提供，不包含账号或付费服务。缺少持久任务工具时生成工作台启动提示，不声称已经创建任务。
+
+## 内容组织
+
+- `skills/`：可安装源码、模板和手册。
+- `workflows/`：工作流索引，引用同一手册。
+- `downloads/`：已验证的便携版本快照。
+- `Install.ps1`、`checksums.json`：安装与包内容校验。
+
+当前只收录经过整理的公开版，不包含完整机器配置、认证文件、私人对话或真实店铺资料。仓库公开不等于已选择开源许可；具体再分发授权以未来明确的许可证为准。
+
+## 后续维护
+
+新增自定义 Skill 时使用独立目录，保留入口说明与实际依赖；源码改动后更新对应校验值与分发包，并记录已测试及未测试范围。不要直接复制整个本机 skills 或配置目录。

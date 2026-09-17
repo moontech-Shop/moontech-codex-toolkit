@@ -1,0 +1,17 @@
+# Local credentials and configuration
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+auth.json
+credentials.json
+secrets/
+# Local scratch and runtime artifacts
+work/
+backups/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
