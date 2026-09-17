@@ -1,0 +1,4 @@
+interface:
+  display_name: "Volt 讨论参谋"
+  short_description: "先理解背景并分轮讨论，检验关键假设与方案取舍，再形成明确判断和行动建议"
+  default_prompt: "使用 $volt-discussion-advisor，先理解我的考虑，和我充分讨论这个问题，再形成明确判断与下一步。"

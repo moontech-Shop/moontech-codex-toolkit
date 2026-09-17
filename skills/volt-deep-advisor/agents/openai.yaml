@@ -1,0 +1,4 @@
+interface:
+  display_name: "Volt 深度参谋"
+  short_description: "深度重构复杂问题，质疑关键假设，并给出明确可执行的建议"
+  default_prompt: "使用 $volt-deep-advisor 深入分析这个问题，质疑关键假设，并给出明确的推荐与下一步。"

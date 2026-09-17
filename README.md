@@ -1,4 +1,4 @@
-# Codex Workflows & Skills
+# Moontech Codex Toolkit
 
 个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2，后续按主题扩展。
 
@@ -11,6 +11,9 @@
 
 解压后在 Codex 打开文件夹，让 Codex 阅读安装说明并执行 `Install.ps1`。需要 PowerShell 7；同名 Skill 默认保留，显式替换会先备份。
 
+- [Volt 参谋双版本：区别、安装与调用](workflows/advisor-versions.md)
+- [下载 Volt 参谋双版本 v1.0](downloads/Volt-advisors-v1.0.zip)
+
 ## Skill 目录
 
 | Skill | 用途 |
@@ -19,11 +22,14 @@
 | [product-project-bootstrap](skills/product-project-bootstrap/SKILL.md) | 用户指定目录、项目模板和三个工作台 |
 | [shopify-product-site-factory](skills/shopify-product-site-factory/SKILL.md) | 单品／少量产品 Shopify 建设与审查便携版 |
 
+| [volt-deep-advisor](skills/volt-deep-advisor/SKILL.md) | 深度参谋原版，保留原文 |
+| [volt-discussion-advisor](skills/volt-discussion-advisor/SKILL.md) | 讨论参谋，先充分讨论再形成判断 |
+
 使用示例：
 
 > 使用 $product-site-suite。产品名称：……；项目文件夹：……；产品／参考网址：……。先整理资料与外观参考，再提供完整 Home 手机／PC 方案，逐步补全网站。
 
-三个 Skill 需一起安装，包内使用相对依赖。浏览器、Shopify、Git、图片生成与任务管理工具由使用环境提供，不包含账号或付费服务。缺少持久任务工具时生成工作台启动提示，不声称已经创建任务。
+三个网站 Skill 需一起安装，包内使用相对依赖。浏览器、Shopify、Git、图片生成与任务管理工具由使用环境提供，不包含账号或付费服务。缺少持久任务工具时生成工作台启动提示，不声称已经创建任务。
 
 ## 内容组织
 
@@ -37,3 +43,5 @@
 ## 后续维护
 
 新增自定义 Skill 时使用独立目录，保留入口说明与实际依赖；源码改动后更新对应校验值与分发包，并记录已测试及未测试范围。不要直接复制整个本机 skills 或配置目录。
+
+两个参谋 Skill 可独立安装。根目录安装脚本仍服务于三个网站 Skill；参谋双版本的安装方式见上方专用说明。
