@@ -21,8 +21,8 @@
 | [product-site-suite](skills/product-site-suite/SKILL.md) | 产品网站总入口，路由开工、建设和审查 |
 | [product-project-bootstrap](skills/product-project-bootstrap/SKILL.md) | 用户指定目录、项目模板和三个工作台 |
 | [shopify-product-site-factory](skills/shopify-product-site-factory/SKILL.md) | 单品／少量产品 Shopify 建设与审查便携版 |
-| [volt-deep-advisor](skills/volt-deep-advisor/SKILL.md) | 深度参谋：梳理目标、检验假设、比较方案，给出明确建议与可执行的下一步。 |
-| [volt-discussion-advisor](skills/volt-discussion-advisor/SKILL.md) | 讨论参谋：先理解你的考虑，通过分轮讨论厘清目标与取舍，再共同形成判断和行动方向。 |
+| [volt-deep-advisor](skills/volt-deep-advisor/SKILL.md) | 深度参谋：用于评估项目是否值得做、审视商业或功能方案、比较多个选择。检查依据、成本和风险，给出推荐及下一步。适合已经有具体问题或方案，需要深入分析和决策建议时。 |
+| [volt-discussion-advisor](skills/volt-discussion-advisor/SKILL.md) | 讨论参谋：用于梳理尚未成型的想法、厘清项目目标与需求、讨论工作或业务方向。通过分轮交流理解你的考虑、探索选择，再形成建议。适合还没想清楚，或希望先充分讨论再作决定时。 |
 
 使用示例：
 

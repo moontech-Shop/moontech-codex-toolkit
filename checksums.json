@@ -2,10 +2,10 @@
   ".gitattributes": "74f066599d3fe2817756c3e532a869d370d4294c5c0a188487da2855f9b2378e",
   ".gitignore": "1297cdf8f686190cb215a3bfb104bc2a1b9698cc2f5abf5d01ceba273f58486c",
   "downloads/Codex-product-site-suite-v1.2.zip": "ab682b160c93d19d5e4e33c81eee01b703c974041f16152dc0772de124ff2a3e",
-  "downloads/Volt-advisors-v1.0.zip": "293fba30c6bd21db47458d43574d6dc2c6337841c6c6ec3f46e798f890afcaf7",
+  "downloads/Volt-advisors-v1.0.zip": "d8659a0ef2496a115176cd990f7ff23c763f66add623469267013e3c15beed48",
   "Install.ps1": "df51563c5aad1a47c1a13e23e0aa1318357d7f1d90058d8bd45c074754dc703d",
   "README-先读这里.md": "63f40c237172cf148408692d2861ad821fdadce65740d8269fbae99cd04fa306",
-  "README.md": "e2d5997863493d30456f9779b199b08208c255f6df6ec8976584b24813e89a9a",
+  "README.md": "13fcefa05be0d5a8689e8648aad613e7eeda2dccb9ec63ffdf92601440175d07",
   "skills/product-project-bootstrap/agents/openai.yaml": "40715092468509e2f6419f4815b84cefd0d322a7b4370cfcf7b104948d8b6278",
   "skills/product-project-bootstrap/assets/project-template/00-总工作台/CHANGE-RECORD.md": "68ff4f23815eb729314b8decdd03ad170bd6221399f6557b543a553a6d17e1ff",
   "skills/product-project-bootstrap/assets/project-template/00-总工作台/DECISIONS.md": "509429471b9031295b7353fec7f78c6f707c4d99bb848a0f34eb8c707211f7af",
@@ -40,7 +40,7 @@
   "skills/volt-deep-advisor/SKILL.md": "e1dd9a42d76990c68dbd52e2ef9dfae98c5a14988b5f555b35ba21d4aed2d187",
   "skills/volt-discussion-advisor/agents/openai.yaml": "7696dd82ad35854e52a0a82973235d379c0b72e49a07c68f0571df4d4db970da",
   "skills/volt-discussion-advisor/SKILL.md": "1a5dc87a3a6b84075a110ae25e67288de2cb6f28c3131da45ff631bb1481886f",
-  "workflows/advisor-versions.md": "aea8c1f913f65ac10ebbf00dc52adbacaa5f89b49575e880a52dde3cb69fe3a3",
+  "workflows/advisor-versions.md": "142ed92d81bd106fc39acbe36aa2009db52f9f5b650f1e328670a7850ab70c39",
   "workflows/README.md": "e5d589e65c91a12a727d698cb22a76cb334d44104f7d3f43d1ff79af50289a17",
   "验证结果.md": "1d3170fd6abd545f324f67abec8c04baeeba8a05d24c2550a7a4d869ef400dfd"
 }
