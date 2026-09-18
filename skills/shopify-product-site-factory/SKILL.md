@@ -7,6 +7,10 @@ description: Build, refine or review a Shopify single-product or small-catalog w
 
 Read [the v1.2 manual](../product-site-suite/references/manual-v1.2.md). For an existing workspace, read its AGENTS, project status, facts, visual baseline and role brief. Preserve approved decisions and exact source locations; when adopting a different standard version record the change instead of replacing project rules wholesale.
 
+## Logo 状态边界
+
+品牌名或 Logo 文字不是已确认的 Logo 设计。仅有名称时，按手册 G1 的 Logo 流程制作可查看候选、取得选择依据并完成适用位置校样，再应用正式资产。明确已有正式文件时复用，不重复设计。网站风格选定与“开始做”不能替代 Logo 选定。状态与资产版本记入 VISUAL-BASELINE；待选期间仅使用注明的内部占位或候选校样，继续无关工作，不擅自批量替换产品/包装图。
+
 ## Build route
 
 1. Derive the task mode from the user's request: new design, visual-only, strict replication or local change. A reference URL alone does not imply strict replication. Preserve content and behavior for visual-only tasks.

@@ -7,6 +7,10 @@ description: Coordinate a product website from user-supplied references through 
 
 Read [the integrated manual](references/manual-v1.2.md) first. Treat its default market and design values as replaceable defaults; the user's current requirements and existing decisions take precedence.
 
+## Logo 状态边界
+
+品牌名或 Logo 文字不是已确认的 Logo 设计。仅有名称时，按手册 G1 的 Logo 流程制作可查看候选、取得选择依据并完成适用位置校样，再应用正式资产。明确已有正式文件时复用，不重复设计。网站风格选定与“开始做”不能替代 Logo 选定。状态与资产版本记入 VISUAL-BASELINE；待选期间仅使用注明的内部占位或候选校样，继续无关工作，不擅自批量替换产品/包装图。
+
 ## Route by the actual request
 
 - Workspace setup or explicit three-workbench initialization: read [product-project-bootstrap](../product-project-bootstrap/SKILL.md). Obtain the product name and exact user-supplied root; preserve existing files and tasks. Setup-only requests do not authorize a full build.

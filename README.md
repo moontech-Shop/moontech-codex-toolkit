@@ -1,10 +1,10 @@
 # Moontech Codex Toolkit
 
-个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2，后续按主题扩展。
+个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2.1，后续按主题扩展。
 
 ## 开始使用
 
-- [下载 v1.2 Windows 整合包](downloads/Codex-product-site-suite-v1.2.zip)
+- [下载 v1.2.1 Windows 整合包](downloads/Codex-product-site-suite-v1.2.1.zip)
 - [安装与使用说明](README-先读这里.md)
 - [完整工作流手册](skills/product-site-suite/references/manual-v1.2.md)
 - [本地验证结果与限制](验证结果.md)
@@ -44,3 +44,5 @@
 新增自定义 Skill 时使用独立目录，保留入口说明与实际依赖；源码改动后更新对应校验值与分发包，并记录已测试及未测试范围。不要直接复制整个本机 skills 或配置目录。
 
 两个参谋 Skill 可独立安装。根目录安装脚本仍服务于三个网站 Skill；参谋双版本的安装方式见上方专用说明。
+
+[v1.2.1 Logo 流程修复与旧项目采用说明](workflows/logo-workflow-fix-v1.2.1.md)。品牌名称确定不再视为 Logo 设计已确认。
