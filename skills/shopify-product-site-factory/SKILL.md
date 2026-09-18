@@ -7,6 +7,10 @@ description: Build, refine or review a Shopify single-product or small-catalog w
 
 Read [the v1.2 manual](../product-site-suite/references/manual-v1.2.md). For an existing workspace, read its AGENTS, project status, facts, visual baseline and role brief. Preserve approved decisions and exact source locations; when adopting a different standard version record the change instead of replacing project rules wholesale.
 
+## 参考评论处理
+
+严格复刻遵循手册第四章“严格复刻评论”：保留参考呈现，不因来源未核实擅自删改或替换为待提供。核实状态只写内部记录，不展示在网站或注入前端数据；不得新增无依据的客户身份/已验证购买背书。影响公开发布的问题在任务对话中讨论具体方案，不先改页面；已有明确决定直接沿用。
+
 ## 严格复刻素材约束
 
 严格复刻按手册第四章迁移可使用的原素材：下载并核验实际文件，上传目标商店/自有CDN，替换所有运行时引用，完成双端播放与断开参考站依赖的验证。原站或其CDN链接只作为来源证据，不作为已完成交付的媒体地址。视频封面、字幕、分片及懒加载依赖同时处理。素材缺失记HOLD并保留模块，不默认隐藏或用不同内容替代；用户批准的例外记Deviation Log。仅文件上传成功不代表复刻完成。
