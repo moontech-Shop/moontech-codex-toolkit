@@ -1,6 +1,6 @@
 interface:
   display_name: "产品网站整合入口"
   short_description: "统一调度产品研究、三工作台初始化、网站建设与双端审查流程"
-  default_prompt: "使用 $product-site-suite 按 v1.2 手册处理这个产品网站项目。"
+  default_prompt: "使用 $product-site-suite 按 v1.3.0 手册处理这个产品网站项目。"
 policy:
   allow_implicit_invocation: true

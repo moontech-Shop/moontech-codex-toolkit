@@ -4,7 +4,7 @@
 
 ## 接手与开始修改
 
-先读 `PROJECT-INDEX.md`、`WORKBENCH-RULES.md`、`00-总工作台/STATUS.md`、`00-总工作台/PROJECT-BRIEF.md`、`00-总工作台/FACTS-CLAIMS.md` 和自己的页面 Brief。视觉任务再读 `02-品牌与共享设计/VISUAL-BASELINE.md`。遵循 `00-总工作台/EXECUTION-FLOW.md` 和 `06-QA与发布/QUALITY-STANDARD.md` v1.2；通用结果只填 QA-CHECKLIST，复刻专用证据填 REFERENCE-MAP。
+先读 `PROJECT-INDEX.md`、`WORKBENCH-RULES.md`、`00-总工作台/STATUS.md`、`00-总工作台/PROJECT-BRIEF.md`、`00-总工作台/FACTS-CLAIMS.md` 和自己的页面 Brief。视觉任务再读 `02-品牌与共享设计/VISUAL-BASELINE.md`。遵循 `00-总工作台/EXECUTION-FLOW.md` 和 `06-QA与发布/QUALITY-STANDARD.md` v1.3.0；通用结果只填 QA-CHECKLIST，复刻专用证据填 REFERENCE-MAP。
 
 - 先查已有决定和用户授权，缺少影响当前实施的必要信息时才提问；继续不依赖该信息的工作。
 - 明确任务模式：严格复刻、只改美术、重新设计。用户已经说明时直接记录；不自行切换模式。
@@ -15,3 +15,5 @@
 - 交付记录包含文件、环境/版本、证据、遗留项和接手人。总台更新状态；页面工作台提交交接，不覆盖总台状态。
 
 初始化只建立工作空间和协作规则，不代表网站已制作或验收。适用的现有用户授权继续有效；本文件不另行授权发布、购买或对外发送。
+
+实际建站/复刻时先读项目 `06-QA与发布/EXECUTION-CONTRACT.md`；未批准差异和未验证结果不能判通过。

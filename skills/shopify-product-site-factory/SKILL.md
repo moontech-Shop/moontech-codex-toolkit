@@ -1,11 +1,15 @@
 ---
 name: shopify-product-site-factory
-description: Build, refine or review a Shopify single-product or small-catalog website using the integrated v1.2 workflow, verified product facts, full desktop/mobile Home design and staged acceptance. This portable edition covers individual storefronts, not team DEV onboarding or subscription-specific batch-template adapters.
+description: Build, refine or review a Shopify single-product or small-catalog website using the integrated v1.3.0 workflow, verified product facts, full desktop/mobile Home design and staged acceptance. This portable edition covers individual storefronts, not team DEV onboarding or subscription-specific batch-template adapters.
 ---
 
-# Product Website Build and Review — Portable v1.2
+# Product Website Build and Review — Portable v1.3.0
 
-Read [the v1.2 manual](../product-site-suite/references/manual-v1.2.md). For an existing workspace, read its AGENTS, project status, facts, visual baseline and role brief. Preserve approved decisions and exact source locations; when adopting a different standard version record the change instead of replacing project rules wholesale.
+Read [the v1.3.0 manual](../product-site-suite/references/manual-v1.3.0.md). For an existing workspace, read its AGENTS, project status, facts, visual baseline and role brief. Preserve approved decisions and exact source locations; when adopting a different standard version record the change instead of replacing project rules wholesale.
+
+## 执行入口 v1.3.0
+
+建站/复刻/续做/审查先读[执行与验收约定](../product-site-suite/references/execution-contract.md)，再读手册。其流程约束用于解决旧规则歧义，用户具体要求优先。先记录实际Skill路径与VERSION；严格复刻不切换为自由改稿。
 
 ## 参考评论处理
 

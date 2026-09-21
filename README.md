@@ -1,12 +1,12 @@
 # Moontech Codex Toolkit
 
-个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2.3，后续按主题扩展。
+个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.3.0，后续按主题扩展。
 
 ## 开始使用
 
-- [下载 v1.2.3 Windows 整合包](downloads/Codex-product-site-suite-v1.2.3.zip)
+- [下载 v1.3.0 Windows 整合包](downloads/Codex-product-site-suite-v1.3.0.zip)
 - [安装与使用说明](README-先读这里.md)
-- [完整工作流手册](skills/product-site-suite/references/manual-v1.2.md)
+- [完整工作流手册](skills/product-site-suite/references/manual-v1.3.0.md)
 - [本地验证结果与限制](验证结果.md)
 
 解压后在 Codex 打开文件夹，让 Codex 阅读安装说明并执行 `Install.ps1`。需要 PowerShell 7；同名 Skill 默认保留，显式替换会先备份。
@@ -50,3 +50,5 @@
 [v1.2.2 严格复刻素材迁移说明](workflows/media-migration-v1.2.2.md)。视频等素材迁入目标存储，不能以参考站热链作为交付。
 
 [v1.2.3 评论复刻与内部核实说明](workflows/review-handling-v1.2.3.md)。内部核实状态不出现在网站上。
+
+[当前 v1.3.0：执行、验收与安装修复](workflows/release-v1.3.0.md)。此前补丁链接为历史记录。

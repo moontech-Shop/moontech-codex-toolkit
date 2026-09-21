@@ -23,7 +23,7 @@
 
 ## 外部状态
 
-执行入口：`AGENTS.md`；流程：`00-总工作台/EXECUTION-FLOW.md`；视觉：`02-品牌与共享设计/VISUAL-BASELINE.md`；复刻映射：`00-总工作台/REFERENCE-MAP.md`；修改范围：各角色目录的 `CHANGE-RECORD.md`；标准：`06-QA与发布/QUALITY-STANDARD.md` v1.2；来源：`06-QA与发布/STANDARD-SOURCES.md`；验收结果：`06-QA与发布/QA-CHECKLIST.md`。
+执行入口：`AGENTS.md`；流程：`00-总工作台/EXECUTION-FLOW.md`；视觉：`02-品牌与共享设计/VISUAL-BASELINE.md`；复刻映射：`00-总工作台/REFERENCE-MAP.md`；修改范围：各角色目录的 `CHANGE-RECORD.md`；标准：`06-QA与发布/QUALITY-STANDARD.md` v1.3.0；来源：`06-QA与发布/STANDARD-SOURCES.md`；验收结果：`06-QA与发布/QA-CHECKLIST.md`。
 
 已有主题源码实际路径：待核实。保留原位置，不自动迁移到模板 Theme 目录。
 

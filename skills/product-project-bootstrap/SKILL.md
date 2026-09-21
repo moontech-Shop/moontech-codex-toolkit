@@ -1,32 +1,34 @@
 ---
 name: product-project-bootstrap
-description: "Initialize a new product website project at a user-supplied folder and create three coordinated Codex workbench tasks: the website master workbench, Home page workbench, and Product page workbench. Use when the user wants to start, set up, scaffold, or reopen this three-workbench product-project structure. Do not use for ordinary edits inside an already-initialized project unless the user asks to repair or resume its workbench setup."
+description: "Initialize only a new product website project in a user-supplied folder and create or reuse three persistent Codex workbench tasks: website master, Home page, and Product page. Use when the user explicitly asks to initialize this three-workbench project structure. Initialization creates the workspace and tasks but does not start research, design, copywriting, development, uploads, Git operations, publishing, or QA. Do not use for ongoing project work, repairs, migrations, or ordinary website edits."
 ---
 
 # Product Project Bootstrap
 
-Create one shared product-project folder and three durable Codex tasks with strict ownership boundaries.
+Create one shared project scaffold and three persistent Codex workbench tasks. This skill performs initialization only.
 
-This is the workspace entrypoint for planning, implementation, and acceptance. After initialization read the generated `00-总工作台/EXECUTION-FLOW.md`. The scaffold includes AGENTS rules, a visual baseline, a replication map, role-local change records, and acceptance evidence. Initialization alone does not build or verify a website.
+## Hard scope boundary
 
-For existing projects preserve all files and source locations. Report old rules/indexes that do not reference new records; merge those only when setup repair is requested, preserving existing decisions. New projects receive the self-contained `06-QA与发布/QUALITY-STANDARD.md` v1.2. Read it and `STANDARD-SOURCES.md` when applying this integration; user-specified standards and accepted exceptions are recorded in PROJECT-BRIEF. QA-CHECKLIST is the single general result log; REFERENCE-MAP holds replication-only evidence. Do not depend on another project's absolute paths or create competing copies. Updating this skill does not migrate existing projects automatically.
+Initialization may:
 
-## Portable bundle integration
+- Create missing project directories and template files without overwriting existing content.
+- Create or reuse the three workbench tasks and record their IDs.
+- Confirm that each task can access the project and understands its future responsibility.
 
-Read [the integrated manual](../product-site-suite/references/manual-v1.2.md). This bundle requires PowerShell 7 for its initializer (`pwsh`); do not run it with Windows PowerShell 5.1. Task creation requires the Codex desktop project/task tools. If unavailable, produce the scaffold and `00-总工作台/TASK-STARTERS.md` role prompts, leave registry IDs blank and report tasks not created. Do not invent IDs or start unrelated sessions as a workaround. Before creating persistent tasks, use the actual available tool schemas.
+Initialization must not begin product research, reference collection, style exploration, copywriting, image creation, page planning, implementation, remote upload, Git work, publication, or QA. Each new workbench only acknowledges its role and waits for the user's next instruction.
 
 ## Required inputs
 
 Collect only missing information:
 
 - Product name.
-- Exact project folder path supplied by the user.
+- Exact absolute project folder path supplied by the user.
 
-Treat the supplied path as the project root. Do not append the product name unless the user explicitly says the path is a parent folder. Accept an existing or not-yet-created path. Reject a drive root, the user profile root, or another obviously broad directory and ask for a dedicated product-project folder instead.
+Treat the supplied path as the project root. Do not append the product name unless the user explicitly says the path is a parent directory. Reject a drive root, user-profile root, common personal-library root, or another obviously broad location and ask for a dedicated product-project folder.
 
-Before changing an existing non-empty folder, inspect its top level. Preserve all existing content. The initializer creates missing folders and files only; it never overwrites files.
+Before writing, inspect the target's top level. Preserve every existing file and source location. Do not merge or rewrite existing project rules during initialization.
 
-## Initialize the folder
+## Create the scaffold
 
 Run:
 
@@ -34,29 +36,30 @@ Run:
 & "<skill-dir>\scripts\initialize_product_project.ps1" -ProjectPath "<absolute-path>" -ProductName "<product-name>"
 ```
 
-Use the actual skill directory in place of `<skill-dir>`. Read the script's JSON result and report any skipped existing files. Do not treat a scaffold as product research or as completed page work.
+Use the actual skill directory. Read the JSON result and distinguish created from preserved files. If a required directory path is occupied by a file, or a required file path is occupied by a directory, stop and report the exact collision.
 
-The scaffold establishes these ownership zones:
+The scaffold creates coordination, product-source, brand, Home, Product-page, development, QA/release, and archive zones. The generated `PROJECT-INDEX.md` and `WORKBENCH-RULES.md` are the routing sources; detailed future build standards are read only after the user assigns actual website work.
 
-- `00-总工作台`: source of truth, product brief, verified facts and claims, decisions, status, task registry, cross-workbench requests, and handoffs.
-- `01-产品资料`: raw inputs, verified facts, reference sites, and original assets.
-- `02-品牌与共享设计`: shared brand system and assets. The master workbench owns changes here.
-- `03-Home页工作台`: Home-only research, copy, design, assets, implementation notes, and QA.
-- `04-Product page工作台`: Product-page-only research, copy, design, assets, implementation notes, and QA.
-- `05-网站开发`: integrated site/theme files and integration notes. The master workbench coordinates shared or cross-page edits here.
-- `06-QA与发布`: cross-page evidence and release records.
-- `99-归档`: retired material.
+## Check task-management capability
 
-## Resolve the Codex project
+The full workflow requires the Codex desktop task tools `list_projects`, `list_threads`, `list_archived_threads`, `read_thread`, `create_thread`, and `wait_threads`.
 
-Call `list_projects` after the folder exists. Normalize paths case-insensitively on Windows and choose the most specific saved local project whose configured path equals or contains the supplied project folder.
+If those tools are unavailable, finish the filesystem scaffold only. Explain that the three persistent tasks still need to be created from Codex desktop. Do not create projectless substitute directories or use subagents.
 
-- If a matching project exists, create all three tasks in that project using the `local` environment so they share the exact same files. Do not use separate worktrees unless the user explicitly requests isolation.
-- If no saved project contains the supplied folder, stop before creating tasks. Tell the user the folder scaffold is ready and ask them to add or open that folder (or its intended parent repository) as a Codex project, then invoke this skill again. Do not create three unrelated projectless directories as a workaround.
+## Resolve the saved Codex project
 
-## Avoid duplicate tasks
+After the folder exists, call `list_projects`.
 
-Read `00-总工作台/TASK-REGISTRY.md`, then call `list_threads`.
+On Windows, normalize path case and trailing separators. A saved project is a match only when its configured path:
+
+- equals the supplied project root; or
+- is an ancestor of the supplied project root.
+
+A saved project located inside the supplied root is not a match. When several ancestor projects match, choose the longest, most specific path. If the result is missing or ambiguous, stop before task creation and ask the user to add/open the intended folder or parent repository as a Codex project.
+
+Use the matching project's `local` environment so all three tasks share the same exact folder. Do not use separate worktrees for this workflow.
+
+## Reuse tasks without creating duplicates
 
 Use these exact titles:
 
@@ -64,50 +67,53 @@ Use these exact titles:
 2. `<产品名称> Home页工作台`
 3. `<产品名称> Product page工作台`
 
-Reuse an existing task only when its exact title and project context both match, or when its task ID is already recorded in the registry. Never create a duplicate merely because an earlier run partially failed.
+Resolve each role in this order:
 
-## Create the three tasks
+1. Read `00-总工作台/TASK-REGISTRY.md`. For every recorded task ID, call `read_thread` and verify the title and project context. A recorded but temporarily inaccessible task is a blocker; do not silently replace it.
+2. Call `list_threads` with `limit: 50` and reuse only an exact title plus exact project match.
+3. Search archived tasks with `list_archived_threads`, following its cursor as needed for exact-title candidates. Do not create a duplicate of an archived match. Report it and ask the user whether to restore it.
 
-Creating these tasks is authorized only when the user explicitly asks to initialize/start the product project or create the workbenches. Use `create_thread` for each missing task. Do not use subagents: these are persistent user-owned tasks that must appear in the sidebar.
+Ignore same-title tasks belonging to other projects. Never infer a match from title alone.
 
-Every initial prompt must include the exact product name, absolute project path, role, owned directories, read-only dependencies, and these shared rules:
+For every verified reused task, upsert its current title, task ID, host ID, role, project path, verification time, and `已复用，等待用户指令` status in `00-总工作台/TASK-REGISTRY.md`. Update the matching task-ID row when it exists; do not append a duplicate row.
 
-- Read `AGENTS.md`, `PROJECT-INDEX.md`, `WORKBENCH-RULES.md`, `00-总工作台/STATUS.md`, `00-总工作台/PROJECT-BRIEF.md`, `00-总工作台/FACTS-CLAIMS.md`, `00-总工作台/EXECUTION-FLOW.md`, and the role brief before working. Visual tasks also read `02-品牌与共享设计/VISUAL-BASELINE.md`.
-- Read `06-QA与发布/QUALITY-STANDARD.md` and use `06-QA与发布/QA-CHECKLIST.md` for current results. The latest guided intake overrides long upfront forms: research and collect product references, then provide 2–3 visual style cards and at least one complete desktop/mobile Home proposal for new design exploration. Reuse selected styles; replication follows its reference instead. Missing commercial launch facts do not block independent design work.
-- Track scope and affected pages/themes/devices in the role-local CHANGE-RECORD. Derive replication, visual-only, or redesign mode from the user request; do not silently change modes. Replication uses REFERENCE-MAP. Verify original requirements and affected desktop/mobile behavior before claiming completion. Include these rules in all three initial prompts.
-- Never invent product facts, certifications, reviews, medical/performance claims, prices, policies, or assets. Mark unknowns as `待确认`.
-- Preserve applicable existing user authorization and its exact scope in handoffs; do not demand repeat approval. Initialization alone does not authorize publication, Git push, or external messages. Preview, GitHub sync, Shopify publication, and launch readiness are separate states.
-- Write only inside the role's owned zone. For a change to a shared/global file, create a request in `00-总工作台/REQUESTS` for the master workbench.
-- Record meaningful decisions and handoffs in the provided project files, not only in chat.
+`list_threads` exposes at most 50 non-pinned active tasks and cannot prove that an older unregistered task does not exist. If the registry has no usable ID, no exact match is visible, and the supplied project may already have had workbench tasks before this initialization, report the limited duplicate check and ask before creating replacements. A newly created project root has no such legacy ambiguity.
 
-### Website master workbench
+## Create missing tasks
 
-Owns `00-总工作台`, `01-产品资料`, `02-品牌与共享设计`, `05-网站开发`, `06-QA与发布`, root coordination files, and final integration. It coordinates scope, facts/claims, shared components, navigation/footer, design-system decisions, Shopify/Git state, cross-page QA, and release gates. It does not silently take over Home or Product-page creative work.
+Read [references/thread-prompts.md](references/thread-prompts.md) only when at least one task must be created.
 
-Initial assignment: inspect the scaffold and existing files, populate only verified/user-provided project facts, list missing inputs, establish the first status snapshot, and coordinate—not fabricate—the two page workbenches.
+Use `create_thread` for each missing persistent task with:
 
-### Home page workbench
+- the matched project ID;
+- `environment: { type: "local" }`;
+- the exact title above;
+- no model or reasoning override;
+- the exact bootstrap-only role prompt adapted with the product name and absolute project path.
 
-Owns `03-Home页工作台`. It handles Home information architecture, copy, Home-specific visuals/assets, responsive design, implementation within its owned area, and Home QA. It reads shared facts and brand decisions but proposes shared/global changes through `00-总工作台/REQUESTS`.
+Create sequentially. Immediately after each successful creation, upsert its title, task ID, host ID, role, project path, time, and `已创建，启动状态待确认` status in `00-总工作台/TASK-REGISTRY.md`. Update the matching task-ID row when it exists; do not append a duplicate row. If recording fails, stop before creating another task and report the created task ID so a retry cannot duplicate it.
 
-Initial assignment: inspect available inputs, create a Home gap list and a page plan in the Home brief, and continue independent research, reference collection and design while listing only the dependent work blocked by missing facts or direction. For a full build follow QUALITY-STANDARD G0–G1; setup alone is not authorization to build the site.
+The initial prompt must explicitly forbid research, design, planning, file edits, uploads, Git operations, publication, and QA. The task should only read its minimal routing files, confirm the path and role, then wait.
 
-### Product page workbench
+## Verify initialization
 
-Owns `04-Product page工作台`. It handles product-page hierarchy, product media requirements, offer/variant/CTA presentation, specifications, supporting proof, FAQ, responsive behavior, implementation within its owned area, and Product-page QA. It reads shared facts and brand decisions but proposes shared/global changes through `00-总工作台/REQUESTS`.
+Call `wait_threads` with `timeoutMs: 0` and all newly created tasks to obtain one compact startup snapshot for every target. Record each task separately as `已初始化，等待用户指令` only when its snapshot confirms readiness; otherwise retain `已创建，启动状态待确认`. A timeout or missing acknowledgement does not prove failure or readiness.
 
-Initial assignment: inspect available inputs, create a Product-page gap list and page plan in the role brief, and flag claim, pricing, variant, inventory, shipping, or policy unknowns rather than guessing.
+Do not wait for website work because no website work is authorized by this skill.
 
-## Record and verify
+## Synchronize initialization state
 
-After each successful creation, record the task title, task ID, host ID when returned, role, project path, and creation time in `00-总工作台/TASK-REGISTRY.md`. Preserve existing registry entries.
+Update `00-总工作台/STATUS.md` after task resolution, not before it:
 
-Wait once for a compact progress snapshot from the three new tasks. Verify that each task either started successfully or clearly needs user attention. Do not require completion of their page work as part of initialization.
+- Mark each role as created, reused, archived-blocked, unavailable, or awaiting confirmation based on evidence.
+- Set the overall state to complete only when the scaffold exists and all three persistent tasks are created or verified for the exact project.
+- If project registration, task tools, duplicate ambiguity, an archived match, registry recording, or startup confirmation blocks part of the workflow, state that the scaffold is complete and task initialization is incomplete. Never leave a blocked or unavailable role marked `已初始化` or `无` blocker.
 
 Finish with:
 
-- The exact project path.
-- What was created versus preserved.
-- Links or IDs for the three tasks, identifying any reused task.
-- Any blocker, especially a folder not yet registered as a Codex project.
-- The next best action: provide product source materials to the master workbench.
+- Exact project path and product name.
+- Created versus preserved scaffold items.
+- Created, reused, archived-blocked, or unavailable status for each workbench task.
+- Any project-registration or capability blocker.
+- A precise statement of whether the scaffold only or the full three-task initialization is complete.
+- A clear statement that no research, design, development, upload, Git, publication, or QA was started.

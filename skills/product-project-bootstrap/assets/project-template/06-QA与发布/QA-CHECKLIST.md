@@ -1,6 +1,6 @@
 # 通用质量验收记录
 
-规则唯一来源：[QUALITY-STANDARD v1.2](QUALITY-STANDARD.md)。只记录本次范围适用的检查，复刻专用指标见总台 REFERENCE-MAP，通过检查ID关联，勿另建同一结果副本。
+规则唯一来源：[QUALITY-STANDARD v1.3.0](QUALITY-STANDARD.md)。只记录本次范围适用的检查，复刻专用指标见总台 REFERENCE-MAP，通过检查ID关联，勿另建同一结果副本。
 
 ## 本次检查环境
 

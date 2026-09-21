@@ -3,7 +3,8 @@
 param(
     [string]$SkillsPath,
     [switch]$ReplaceExisting,
-    [string]$BackupPath
+    [string]$BackupPath,
+    [switch]$PlanOnly
 )
 $ErrorActionPreference = 'Stop'
 $sourceRoot = Join-Path $PSScriptRoot 'skills'
@@ -44,13 +45,7 @@ foreach ($name in $names) {
     $src = Join-Path $sourceRoot $name
     if (-not (Test-Path -LiteralPath (Join-Path $src 'SKILL.md'))) { throw "Missing skill: $name" }
     $targetRoot = $SkillsPath
-    if (-not $explicitTarget) {
-        $legacyRoot = Join-Path $profilePath '.codex/skills'
-        $legacy = Join-Path $legacyRoot $name
-        $modern = Join-Path $SkillsPath $name
-        if ((Test-Path -LiteralPath $legacy) -and (Test-Path -LiteralPath $modern)) { throw "Duplicate installed locations for $name. Resolve before installing." }
-        if (Test-Path -LiteralPath $legacy) { $targetRoot = Full $legacyRoot }
-    }
+    # The bundle root was resolved once above. Do not compare that root with itself.
     $dest = Full (Join-Path $targetRoot $name)
     if (-not (IsChild $dest $targetRoot)) { throw 'Target escaped skills root.' }
     $state = 'new'
@@ -65,6 +60,10 @@ foreach ($name in $names) {
         $state=if($same){'identical'}else{'conflict'}
     }
     $plan += [pscustomobject]@{name=$name;source=$src;destination=$dest;root=$targetRoot;state=$state;backup=$null}
+}
+if ($PlanOnly) {
+    $plan | Select-Object name,destination,state | ConvertTo-Json -Depth 4
+    return
 }
 if (($plan.state -contains 'conflict') -and -not $ReplaceExisting) {
     $plan | Select-Object name,destination,state | ConvertTo-Json -Depth 4

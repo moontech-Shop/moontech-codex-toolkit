@@ -3,9 +3,13 @@ name: product-site-suite
 description: Coordinate a product website from user-supplied references through workspace setup, guided design, Shopify implementation and evidence-based review. Use for the integrated product-site workflow or a request to start or audit a product site; route workspace creation to product-project-bootstrap and implementation to shopify-product-site-factory.
 ---
 
-# Product Site Suite v1.2
+# Product Site Suite v1.3.0
 
-Read [the integrated manual](references/manual-v1.2.md) first. Treat its default market and design values as replaceable defaults; the user's current requirements and existing decisions take precedence.
+Read [the integrated manual](references/manual-v1.3.0.md) first. Treat its default market and design values as replaceable defaults; the user's current requirements and existing decisions take precedence.
+
+## 执行入口 v1.3.0
+
+建站/复刻/续做/审查先读[执行与验收约定](references/execution-contract.md)，再读手册。其流程约束用于解决旧规则歧义，用户具体要求优先。先记录实际Skill路径与VERSION；严格复刻不切换为自由改稿。
 
 ## 参考评论处理
 

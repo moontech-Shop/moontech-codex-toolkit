@@ -1,4 +1,4 @@
-# Codex 产品网站整合包 v1.2.3
+# Codex 产品网站整合包 v1.3.0
 
 这是可安装的Skill包，不是只含文档的压缩包；不包含账号、店铺凭据、付费服务或插件连接。
 
@@ -18,7 +18,7 @@
 
 ## 包内内容
 
-- `skills/product-site-suite`：总入口＋完整v1.2手册。
+- `skills/product-site-suite`：总入口＋完整v1.3.0手册。
 - `skills/product-project-bootstrap`：三工作台规则、项目模板、PowerShell 7初始化脚本。
 - `skills/shopify-product-site-factory`：单店建设/审查便携版。它不包含旧版Moontech团队DEV或付费建站器的批量模板适配器；原版存在时安装器会报告冲突。
 - `Install.ps1`：安全安装/显式替换及备份；不下载软件、不登录账号。
@@ -31,4 +31,4 @@
 
 官方目录及发现规则（核对2026-09-17）：https://developers.openai.com/codex/skills/
 
-当前补丁包含Logo设计确认、严格复刻素材迁移和评论内部核实规则；手册路径沿用v1.2。历史ZIP是旧版快照，安装最新版请使用v1.2.3。
+当前补丁包含Logo设计确认、严格复刻素材迁移和评论内部核实规则；手册路径为v1.3.0。历史ZIP是旧版快照，安装最新版请使用v1.3.0。
