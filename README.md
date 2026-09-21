@@ -52,3 +52,5 @@
 [v1.2.3 评论复刻与内部核实说明](workflows/review-handling-v1.2.3.md)。内部核实状态不出现在网站上。
 
 [当前 v1.3.0：执行、验收与安装修复](workflows/release-v1.3.0.md)。此前补丁链接为历史记录。
+
+已合并 [v1.2.4 初始化修复](workflows/bootstrap-initialization-hardening-v1.2.4.md)，保留初始化与后续建站分离的边界。

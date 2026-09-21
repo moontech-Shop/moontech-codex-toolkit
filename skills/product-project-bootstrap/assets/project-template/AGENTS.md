@@ -1,19 +1,22 @@
 # {{PRODUCT_NAME}} 项目执行入口
 
-项目根目录：`{{PROJECT_PATH}}`。本文件只约束本产品项目。
+项目根目录：`{{PROJECT_PATH}}`。
 
-## 接手与开始修改
+## 初始化模式
 
-先读 `PROJECT-INDEX.md`、`WORKBENCH-RULES.md`、`00-总工作台/STATUS.md`、`00-总工作台/PROJECT-BRIEF.md`、`00-总工作台/FACTS-CLAIMS.md` 和自己的页面 Brief。视觉任务再读 `02-品牌与共享设计/VISUAL-BASELINE.md`。遵循 `00-总工作台/EXECUTION-FLOW.md` 和 `06-QA与发布/QUALITY-STANDARD.md` v1.3.0；通用结果只填 QA-CHECKLIST，复刻专用证据填 REFERENCE-MAP。
+如果当前任务明确写着“仅初始化”，只读取 `PROJECT-INDEX.md`、`WORKBENCH-RULES.md` 和自己的角色 Brief，确认项目路径与职责后等待。不要研究、设计、规划页面、编辑文件、上传、使用 Git、发布或执行 QA。
 
-- 先查已有决定和用户授权，缺少影响当前实施的必要信息时才提问；继续不依赖该信息的工作。
-- 明确任务模式：严格复刻、只改美术、重新设计。用户已经说明时直接记录；不自行切换模式。
-- 修改前在本角色目录下使用 `CHANGE-RECORD.md` 记录本次目标、保留项、受影响页面/主题/设备及验收条件。小修改可用一条简短记录，不必另起文档。
-- 只写本角色负责的文件；共享源码、整合和发布由总台负责。具体例外见 `WORKBENCH-RULES.md`。
-- 关键事实和图片内声明引用事实编号，未知内容不可编造。事实变更要检查引用它的页面与素材。
-- 宣布完成前回到用户要求逐项验证，同时检查桌面、手机及修改影响范围；未验证和不适用要写明原因。
-- 交付记录包含文件、环境/版本、证据、遗留项和接手人。总台更新状态；页面工作台提交交接，不覆盖总台状态。
+## 用户分配实际工作后
 
-初始化只建立工作空间和协作规则，不代表网站已制作或验收。适用的现有用户授权继续有效；本文件不另行授权发布、购买或对外发送。
+先读取 `PROJECT-INDEX.md`、`WORKBENCH-RULES.md`、`00-总工作台/STATUS.md`、`00-总工作台/PROJECT-BRIEF.md`、`00-总工作台/FACTS-CLAIMS.md` 和自己的角色 Brief。
 
-实际建站/复刻时先读项目 `06-QA与发布/EXECUTION-CONTRACT.md`；未批准差异和未验证结果不能判通过。
+- 阶段流程见 `00-总工作台/EXECUTION-FLOW.md`。
+- 文件归属与冲突处理见 `WORKBENCH-RULES.md`。
+- 视觉决策见 `02-品牌与共享设计/VISUAL-BASELINE.md`。
+- 通用质量要求见 `06-QA与发布/QUALITY-STANDARD.md`，只读取当前任务相关章节。
+- 通用验收结果只写入 `06-QA与发布/QA-CHECKLIST.md`。
+- 严格复刻才使用 `00-总工作台/REFERENCE-MAP.md`。
+
+未知产品事实不得编造。初始化本身不授权远端上传、Git push、Live 发布、付款或对外发送。
+
+实际建站、复刻或续做时先读 `06-QA与发布/EXECUTION-CONTRACT.md`，领域细则读取同根 product-site-suite 的 references/manual-v1.3.0.md；初始化阶段不触发建站。未批准差异和未验证结果不能判通过。QA-CHECKLIST 引用 ACCEPTANCE-EVIDENCE 或已有证据记录，不重复维护结果。
