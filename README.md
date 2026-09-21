@@ -1,10 +1,10 @@
 # Moontech Codex Toolkit
 
-个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2.3，后续按主题扩展。
+个人工作流与自定义 Codex Skill 集合。首批收录产品网站建设与审查整合包 v1.2.4，后续按主题扩展。
 
 ## 开始使用
 
-- [下载 v1.2.3 Windows 整合包](downloads/Codex-product-site-suite-v1.2.3.zip)
+- [下载 v1.2.4 Windows 整合包](downloads/Codex-product-site-suite-v1.2.4.zip)
 - [安装与使用说明](README-先读这里.md)
 - [完整工作流手册](skills/product-site-suite/references/manual-v1.2.md)
 - [本地验证结果与限制](验证结果.md)
@@ -19,7 +19,7 @@
 | Skill | 用途 |
 |---|---|
 | [product-site-suite](skills/product-site-suite/SKILL.md) | 产品网站总入口，路由开工、建设和审查 |
-| [product-project-bootstrap](skills/product-project-bootstrap/SKILL.md) | 用户指定目录、项目模板和三个工作台 |
+| [product-project-bootstrap](skills/product-project-bootstrap/SKILL.md) | 在用户指定目录中仅初始化项目骨架和三个持久工作台 |
 | [shopify-product-site-factory](skills/shopify-product-site-factory/SKILL.md) | 单品／少量产品 Shopify 建设与审查便携版 |
 | [volt-deep-advisor](skills/volt-deep-advisor/SKILL.md) | 深度参谋：用于评估项目是否值得做、审视商业或功能方案、比较多个选择。检查依据、成本和风险，给出推荐及下一步。适合已经有具体问题或方案，需要深入分析和决策建议时。 |
 | [volt-discussion-advisor](skills/volt-discussion-advisor/SKILL.md) | 讨论参谋：用于梳理尚未成型的想法、厘清项目目标与需求、讨论工作或业务方向。通过分轮交流理解你的考虑、探索选择，再形成建议。适合还没想清楚，或希望先充分讨论再作决定时。 |
@@ -50,3 +50,5 @@
 [v1.2.2 严格复刻素材迁移说明](workflows/media-migration-v1.2.2.md)。视频等素材迁入目标存储，不能以参考站热链作为交付。
 
 [v1.2.3 评论复刻与内部核实说明](workflows/review-handling-v1.2.3.md)。内部核实状态不出现在网站上。
+
+[v1.2.4 三工作台仅初始化加固说明](workflows/bootstrap-initialization-hardening-v1.2.4.md)。初始化状态必须与任务创建、复用和阻塞证据一致。

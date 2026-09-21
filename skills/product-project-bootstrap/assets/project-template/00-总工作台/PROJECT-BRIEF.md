@@ -26,7 +26,7 @@
 
 - 任务模式：严格复刻 / 只改美术 / 重新设计（按用户要求填写）
 - 必须保留的内容、结构和行为：待记录
-- 通用标准：`06-QA与发布/QUALITY-STANDARD.md` v1.2（2026-09-17）；结果记 QA-CHECKLIST
+- 通用标准：`06-QA与发布/QUALITY-STANDARD.md` v1.2（2026-09-20）；结果记 QA-CHECKLIST
 - 复刻扩展：REFERENCE-MAP（含偏差、双端diff和DoD）；非复刻标记不适用
 - 用户指定标准与已确认差异：待记录；已有明确要求直接录入，不重复询问
 - 视觉方案引用：`02-品牌与共享设计/VISUAL-BASELINE.md`
